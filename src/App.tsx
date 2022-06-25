@@ -1,22 +1,24 @@
-import React from 'react';
-import ToolsPage from './components/ToolsPage/ToolsPage';
-import { HomePage } from './components/HomePage/HomePage';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import RewardsPage from './components/RewardsPage/RewardsPage';
+import ToolsPage from "./components/ToolsPage/ToolsPage";
+import { HomePage } from "./components/HomePage/HomePage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import RewardsPage from "./components/RewardsPage/RewardsPage";
+import { ResourcesPage } from "./components/ResourcesPage/ResourcesPage";
+import { Footer } from "./components/Footer/Footer";
+import { NavBar } from "./components/NavBar/NavBar";
 
-function App() {
+export const App = () => {
   return (
-
     <BrowserRouter>
-        <div>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/tools" component={ToolsPage} />
-            <Route exact path="/rewards" component={RewardsPage} />
-          </Switch>
-        </div>
+      <div>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/tools" component={ToolsPage} />
+          <Route exact path="/rewards" component={RewardsPage} />
+          <Route exact path="/resources" component={ResourcesPage} />
+        </Switch>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
-}
-
-export default App;
+};
