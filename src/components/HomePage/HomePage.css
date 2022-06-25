@@ -1,28 +1,28 @@
-
 .App-logo {
-    height: 4vmin;
-    pointer-events: none;
-  }
+  height: 4vmin;
+  pointer-events: none;
+}
 
-  .icon {
-   display: flex;
-   justify-content: center;
-   padding-bottom: 20px;
-  }
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
 
-  .feedback-form {    /* margin: auto; */
-    text-align: center;
-    background-color: #e3b3ff;
-    padding-top: 80px;
-    padding-bottom: 50px;
-  }
+.feedback-form {
+  /* margin: auto; */
+  text-align: center;
+  background-color: #e3b3ff;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
 
-  .form-fields {
-    justify-content: center;
-  }
+.form-fields {
+  justify-content: center;
+}
 
-  .main {
-    background-color: #e3b3ff;
-    padding-top: 15px;
-    padding-bottom: 6px;
-  }
+.main {
+  background-color: #eed1ff;
+  padding-top: 15px;
+  padding-bottom: 6px;
+}

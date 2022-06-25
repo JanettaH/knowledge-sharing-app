@@ -1,24 +1,12 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "../HomePage/HomePage.css";
-import NavBar from "../NavBar/NavBar";
 import {DataGrid} from "@mui/x-data-grid";
-
-function Copyright() {
-    return (
-      <Typography variant="body2" color="text.secondary" align="center">
-        {"Copyright © "}
-        <Link color="inherit">Team 6</Link> {new Date().getFullYear()}
-        {"."}
-      </Typography>
-    );
-  }
 
 const theme = createTheme();
 
@@ -31,15 +19,12 @@ function Leaderboard() {
         { field: 'email', headerName: "Email", flex: 1}
     ]
 
-    const [data, setData] = React.useState<any[]>([]);
+    const [data, setData] = useState<any[]>([]);
 
-  React.useEffect(() => {
-    // const updateData = async () => {
-        fetch("/employees")
+  useEffect(() => {
+      fetch("/employees")
       .then((res) => res.json())
       .then((data) => setData(data));
-    // }
-    // updateData();
   }, []);
 
 
@@ -47,7 +32,6 @@ function Leaderboard() {
     return (
         <ThemeProvider theme={theme}>
       <CssBaseline />
-      <NavBar/>
       <main>
         {/* Hero unit */}
         <Box className="main">
@@ -59,6 +43,7 @@ function Leaderboard() {
                   variant="h4"
                   align="center"
                   color="text.primary"
+                  style={{ fontWeight: 600 }}
                   gutterBottom
                 >
                   Leaderboard 
@@ -88,22 +73,6 @@ function Leaderboard() {
           </Box>
 
       </main>
-      {/* Footer */}
-      <Box sx={{ bgcolor: "background.paper", p: 3 }} component="footer">
-        {/*       <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography> */}
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          Accenture - Sharing is caring
-        </Typography>
-        <Copyright />
-      </Box>
-      {/* End footer */}
     </ThemeProvider>
     )
 }
