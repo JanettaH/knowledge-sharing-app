@@ -1,6 +1,5 @@
 import AppBar from "@mui/material/AppBar";
  import Toolbar from "@mui/material/Toolbar";
- import Typography from "@mui/material/Typography";
  import logo from "../../assets/logo.png"
  import Link from "@mui/material/Link";
  import "./NavBar.css";
@@ -12,10 +11,10 @@ import AppBar from "@mui/material/AppBar";
          <Toolbar>
            <img src={logo} className="App-logo" alt="logo" />
            <div className="NavLinks"> 
-               <Link href="#" className="Links" underline="none" color="black">Home</Link>
-               <Link href="#" className="Links" underline="none" color="black">Tools</Link>
-               <Link href="#" className="Links" underline="none" color="black">Rewards</Link>
-               <Link href="#" className="Links" underline="none" color="black">Resources</Link>
+               <Link href="/" className="Links" underline="none" color="black">Home</Link>
+               <Link href="/tools" className="Links" underline="none" color="black">Tools</Link>
+               <Link href="/rewards" className="Links" underline="none" color="black">Rewards</Link>
+               <Link href="/resources" className="Links" underline="none" color="black">Resources</Link>
            </div>
          </Toolbar>
        </AppBar>
