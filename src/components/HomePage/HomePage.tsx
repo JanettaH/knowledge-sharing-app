@@ -1,5 +1,4 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -9,13 +8,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import logo from "./logo.png";
 import "./HomePage.css";
+import NavBar from "../NavBar/NavBar";
 
 function Copyright() {
   return (
@@ -35,13 +33,7 @@ export const HomePage = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative" color="inherit">
-        <Toolbar>
-          <img src={logo} className="App-logo" alt="logo" />
-
-          <Typography variant="h6" color="inherit" noWrap></Typography>
-        </Toolbar>
-      </AppBar>
+      <NavBar/>
       <main>
         {/* Hero unit */}
         <Box

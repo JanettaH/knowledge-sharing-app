@@ -1,0 +1,16 @@
+.App-logo {
+    height: 4vmin;
+    pointer-events: none;
+  }
+
+  .NavLinks {
+      margin-left: auto;
+  }
+
+  .Links {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      margin-left: 20px;
+  }
+
