@@ -21,13 +21,11 @@ function Leaderboard() {
 
     const [data, setData] = useState<any[]>([]);
 
-  useEffect(() => {
-      fetch("/employees")
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
-
-
+    useEffect(() => {
+        fetch("/employees")
+        .then((res) => res.json())
+        .then((data) => setData(data));
+    }, []);
 
     return (
         <ThemeProvider theme={theme}>
@@ -74,7 +72,7 @@ function Leaderboard() {
 
       </main>
     </ThemeProvider>
-    )
+    );
 }
 
 export default Leaderboard;

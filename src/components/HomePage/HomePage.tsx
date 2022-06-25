@@ -50,8 +50,7 @@ export const HomePage = () => {
                   color="text.secondary"
                   paragraph
                 >
-                  Ever felt lost looking for an information on an internal
-                  process? Blah blah blah
+                  No more spending hours looking or creating documentation!
                 </Typography>
 
                 <Stack
@@ -60,7 +59,7 @@ export const HomePage = () => {
                   spacing={2}
                   justifyContent="center"
                 >
-                  <Button variant="contained" style={{ background: "#31004d" }}>
+                  <Button variant="contained" href="/resources" style={{ background: "#31004d" }}>
                     Search
                   </Button>
                   <Button
@@ -111,7 +110,7 @@ export const HomePage = () => {
                 paragraph
               >
                 {" "}
-                sdrhdfhdfgdfgdfgdfgdfg
+                Record & share knowledge quickly without spending hours!
               </Typography>
             </Grid>
             <Grid
@@ -138,7 +137,7 @@ export const HomePage = () => {
                 paragraph
               >
                 {" "}
-                sdrhdfhdfgdfgdfgdfgdfg
+                No more complicated tools - you already have them at your fingertips!
               </Typography>
             </Grid>
             <Grid
@@ -165,7 +164,7 @@ export const HomePage = () => {
                 paragraph
               >
                 {" "}
-                sdrhdfhdfgdfgdfgdfgdfg
+                Share your knowledge how you like it and when you like it!
               </Typography>
             </Grid>
           </Grid>
