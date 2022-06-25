@@ -15,6 +15,7 @@ import AppBar from "@mui/material/AppBar";
                <Link href="/tools" className="Links" underline="none" color="black">Tools</Link>
                <Link href="/rewards" className="Links" underline="none" color="black">Rewards</Link>
                <Link href="/resources" className="Links" underline="none" color="black">Resources</Link>
+               <Link href="/leaderboard" className="Links" underline="none" color="black">Leaderboard</Link>
            </div>
          </Toolbar>
        </AppBar>
