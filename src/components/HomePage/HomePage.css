@@ -13,3 +13,11 @@
    display: flex;
    justify-content: center;
   }
+
+  .feedback-form {    /* margin: auto; */
+    text-align: center;
+  }
+
+  .form-fields {
+    justify-content: center;
+  }

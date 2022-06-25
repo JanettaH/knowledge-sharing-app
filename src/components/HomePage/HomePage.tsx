@@ -15,9 +15,12 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./HomePage.css";
 import NavBar from "../NavBar/NavBar";
 import grid1picture from "../../assets/homescreen-grid-1.jpg";
+import grid2picture from "../../assets/homescreen-grid-2.jpg";
+import grid3picture from "../../assets/homescreen-grid-3.jpg";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import PeopleIcon from '@mui/icons-material/People';
+import { CardHeader, TextField } from "@mui/material";
 
 function Copyright() {
   return (
@@ -160,88 +163,125 @@ export const HomePage = () => {
                 </Typography>
             </Grid>
           </Grid>
-          {/* <Container maxWidth="sm">
-            <Typography
-              component="h1"
-              variant="h4"
-              align="center"
-              color="text.primary"
-              gutterBottom
-            >
-              Welcome to your one-stop shop for all the knowledge in Accenture.
-            </Typography>
-            <Typography
-              variant="h5"
-              align="center"
-              color="text.secondary"
-              paragraph
-            >
-              Ever felt lost looking for an information on an internal process?
-              Blah blah blah
-            </Typography>
 
-            <Stack
-              sx={{ pt: 4 }}
-              direction="row"
-              spacing={2}
-              justifyContent="center"
-            >
-              <Button variant="contained" style={{ background: "#A100FF" }}>
-                Search
-              </Button>
-              <Button
-                variant="outlined"
-                style={{ color: "#A100FF", borderColor: "#A100FF" }}
-              >
-                See all articles
-              </Button>
-            </Stack>
-
-          </Container> */}
-
-
-
-
-
-
-        </Box>
-        <Container sx={{ py: 8 }} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  <CardMedia
+          <Grid container spacing={2} alignItems="center" style={{"paddingTop" : "100px"}}>
+          <Grid item xs={6}>
+            <CardMedia
                     component="img"
-                    image="https://source.unsplash.com/random"
-                    alt="random"
+                    image={grid2picture}
+                    alt="people cheering"
                   />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Share knowledge - earn points!
-                    </Typography>
-                    <Typography>
-                      You will gain points for each piece of knowledge you
+            </Grid>
+            <Grid item xs={6}>
+              <Container maxWidth="sm" className="GridContainer">
+                <Typography
+                  component="h1"
+                  variant="h4"
+                  align="center"
+                  color="text.primary"
+                  gutterBottom
+                >
+                  Share knowledge - earn points!
+                </Typography>
+                <Typography
+                  variant="h5"
+                  align="center"
+                  color="text.secondary"
+                  paragraph
+                >
+                  You will gain points for each piece of knowledge you
                       share. Collect your points & redeem them against a
                       fabulous list of prizes!
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" style={{ color: "#A100FF" }}>
-                      Explore Rewards
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
+                </Typography>
+
+                <Stack
+                  sx={{ pt: 4 }}
+                  direction="row"
+                  spacing={2}
+                  justifyContent="center"
+                >
+                  <Button variant="contained" style={{ background: "#A100FF" }}>
+                    Explore Rewards
+                  </Button>
+                </Stack>
+             </Container>
+            </Grid>
+            
           </Grid>
-        </Container>
+
+          <Grid container spacing={2} alignItems="center" style={{"paddingTop" : "100px"}}>
+          
+            <Grid item xs={6}>
+              <Container maxWidth="sm" className="GridContainer">
+                <Typography
+                  component="h1"
+                  variant="h4"
+                  align="center"
+                  color="text.primary"
+                  gutterBottom
+                >
+                  Sharing knowledge has never been easier!
+                </Typography>
+                <Typography
+                  variant="h5"
+                  align="center"
+                  color="text.secondary"
+                  paragraph
+                >
+                  We have tested & identified the best tools for efficient knowledge sharing, so you can easily get up and running!
+                </Typography>
+
+                <Stack
+                  sx={{ pt: 4 }}
+                  direction="row"
+                  spacing={2}
+                  justifyContent="center"
+                >
+                  <Button variant="contained" style={{ background: "#A100FF" }}>
+                    Explore Tools
+                  </Button>
+                </Stack>
+             </Container>
+            </Grid>
+            <Grid item xs={6}>
+            <CardMedia
+                    component="img"
+                    image={grid3picture}
+                    alt="people sharing knowledge"
+                  />
+            </Grid>
+            
+          </Grid>
+
+
+
+          
+
+        </Box>
+
+        <Box className="feedback-form">
+          <Card>
+            <CardHeader title="Got Feedback?"/>
+            <Typography
+             variant="h6"
+             align="center"
+             color="text.secondary"
+             paragraph>We'd love to hear it!</Typography>
+          <Grid container spacing={6} className="form-fields">
+            <Grid item>
+              <TextField id="standard-basic" label="Name" variant="standard" />
+            </Grid>
+            <Grid item>
+              <TextField id="standard-basic" label="Email" variant="standard" />
+            </Grid>
+          </Grid>
+          <Grid container className="form-fields" style={{"paddingTop" : "25px"}}>
+            <Grid item>
+             <TextField id="standard-basic" label="Your Message" variant="standard" multiline={true}/>
+            </Grid>
+          </Grid>
+          </Card>
+        </Box>
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
