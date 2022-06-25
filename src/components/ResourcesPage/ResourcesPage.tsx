@@ -130,13 +130,13 @@ export const ResourcesPage = () => {
                 >
                   <FormControlLabel
                     value="Team/Department"
-                    control={<Radio style={{ color: "#A100FF" }} />}
+                    control={<Radio style={{ color: "#31004d" }} />}
                     label="Team/Department"
                     checked={radioValue === "Team/Department"}
                   />
                   <FormControlLabel
                     value="Content"
-                    control={<Radio style={{ color: "#A100FF" }} />}
+                    control={<Radio style={{ color: "#31004d" }} />}
                     label="Content"
                     checked={radioValue === "Content"}
                   />
@@ -146,7 +146,7 @@ export const ResourcesPage = () => {
               <Button
                 type="submit"
                 variant="contained"
-                style={{ background: "#A100FF", marginBottom: "4rem" }}
+                style={{ background: "#31004d", marginBottom: "4rem" }}
                 sx={{ mt: 3, mb: 2 }}
               >
                 Search
