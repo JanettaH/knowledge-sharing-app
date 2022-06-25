@@ -14,6 +14,10 @@ import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./HomePage.css";
 import NavBar from "../NavBar/NavBar";
+import grid1picture from "../../assets/homescreen-grid-1.jpg";
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CelebrationIcon from '@mui/icons-material/Celebration';
+import PeopleIcon from '@mui/icons-material/People';
 
 function Copyright() {
   return (
@@ -43,7 +47,120 @@ export const HomePage = () => {
             pb: 6,
           }}
         >
-          <Container maxWidth="sm">
+
+
+          <Grid container spacing={2} alignItems="center" style={{"paddingBottom" : "100px"}}>
+            <Grid item xs={6}>
+              <Container maxWidth="sm" className="GridContainer">
+                <Typography
+                  component="h1"
+                  variant="h4"
+                  align="center"
+                  color="text.primary"
+                  gutterBottom
+                >
+                  Welcome to your one-stop shop for all the knowledge in Accenture.
+                </Typography>
+                <Typography
+                  variant="h5"
+                  align="center"
+                  color="text.secondary"
+                  paragraph
+                >
+                  Ever felt lost looking for an information on an internal process?
+                  Blah blah blah
+                </Typography>
+
+                <Stack
+                  sx={{ pt: 4 }}
+                  direction="row"
+                  spacing={2}
+                  justifyContent="center"
+                >
+                  <Button variant="contained" style={{ background: "#A100FF" }}>
+                    Search
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    style={{ color: "#A100FF", borderColor: "#A100FF" }}
+                  >
+                    See all articles
+                  </Button>
+                </Stack>
+             </Container>
+            </Grid>
+            <Grid item xs={6}>
+            <CardMedia
+                    component="img"
+                    image={grid1picture}
+                    alt="people collaborating"
+                  />
+            </Grid>
+          </Grid>
+          
+          <Grid container spacing={3} justifyContent="center" alignItems="center">
+            <Grid item xs>
+              <div className="icon">
+                <AccessTimeIcon fontSize="large"></AccessTimeIcon>
+              </div> 
+              <Typography
+                variant="h4"
+                align="center"
+                color="text.primary"
+                gutterBottom
+                >Time Saving
+                </Typography>
+                <Typography
+                variant="h5"
+                align="center"
+                color="text.secondary"
+                paragraph
+                > sdrhdfhdfgdfgdfgdfgdfg
+
+                </Typography>
+            </Grid>
+            <Grid item xs>
+              <div className="icon">
+                <CelebrationIcon fontSize="large"></CelebrationIcon>
+              </div>
+              <Typography
+                variant="h4"
+                align="center"
+                color="text.primary"
+                gutterBottom
+                 >Easy to implement
+                  </Typography>
+                  <Typography
+                variant="h5"
+                align="center"
+                color="text.secondary"
+                paragraph
+                > sdrhdfhdfgdfgdfgdfgdfg
+
+                </Typography>
+            </Grid>
+            <Grid item xs>
+              <div className="icon">
+                <PeopleIcon fontSize="large"></PeopleIcon>
+              </div>
+              <Typography
+              variant="h4"
+              align="center"
+              color="text.primary"
+              gutterBottom
+              >Inclusive
+              </Typography>
+              <Typography
+                variant="h5"
+                align="center"
+                color="text.secondary"
+                paragraph
+                > sdrhdfhdfgdfgdfgdfgdfg
+
+                </Typography>
+            </Grid>
+          </Grid>
+          {/* <Container maxWidth="sm">
             <Typography
               component="h1"
               variant="h4"
@@ -62,6 +179,7 @@ export const HomePage = () => {
               Ever felt lost looking for an information on an internal process?
               Blah blah blah
             </Typography>
+
             <Stack
               sx={{ pt: 4 }}
               direction="row"
@@ -78,7 +196,14 @@ export const HomePage = () => {
                 See all articles
               </Button>
             </Stack>
-          </Container>
+
+          </Container> */}
+
+
+
+
+
+
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}

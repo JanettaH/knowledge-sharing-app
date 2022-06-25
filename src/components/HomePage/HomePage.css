@@ -1,1 +1,15 @@
 
+.App-logo {
+    height: 4vmin;
+    pointer-events: none;
+  }
+
+  .GridContainer {
+   
+    
+  }
+
+  .icon {
+   display: flex;
+   justify-content: center;
+  }
