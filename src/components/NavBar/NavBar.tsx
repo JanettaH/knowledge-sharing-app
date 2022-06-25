@@ -1,6 +1,5 @@
 import AppBar from "@mui/material/AppBar";
  import Toolbar from "@mui/material/Toolbar";
- import Typography from "@mui/material/Typography";
  import logo from "../../assets/logo.png"
  import Link from "@mui/material/Link";
  import "./NavBar.css";
