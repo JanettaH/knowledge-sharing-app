@@ -1,13 +1,16 @@
 .App-logo {
-    height: 4vmin;
-    pointer-events: none;
-  }
+  height: 4vmin;
+  pointer-events: none;
+}
 
-  .NavLinks {
-      margin-left: auto;
-  }
+.NavLinks {
+  margin-left: auto;
+}
 
-  .Links {
-      font-size: 18px;
-      padding-left: 20px;
-  }
+.Links {
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: "Graphik SemiBold", "Arial", "Sans-Serif";
+  font-weight: 600;
+  cursor: pointer;
+}
