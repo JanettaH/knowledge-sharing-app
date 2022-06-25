@@ -3,13 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { HomePage } from "./components/HomePage/HomePage";
+import { Resources } from "./components/Resources/Resources";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <Resources />
   </React.StrictMode>
 );
 
