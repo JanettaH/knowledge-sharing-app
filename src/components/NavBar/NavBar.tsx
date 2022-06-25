@@ -11,10 +11,10 @@ import AppBar from "@mui/material/AppBar";
          <Toolbar>
            <img src={logo} className="App-logo" alt="logo" />
            <div className="NavLinks"> 
-               <Link href="#" className="Links" underline="none" color="black">Home</Link>
-               <Link href="#" className="Links" underline="none" color="black">Tools</Link>
-               <Link href="#" className="Links" underline="none" color="black">Rewards</Link>
-               <Link href="#" className="Links" underline="none" color="black">Resources</Link>
+               <Link href="/" className="Links" underline="none" color="black">Home</Link>
+               <Link href="/tools" className="Links" underline="none" color="black">Tools</Link>
+               <Link href="/rewards" className="Links" underline="none" color="black">Rewards</Link>
+               <Link href="/resources" className="Links" underline="none" color="black">Resources</Link>
            </div>
          </Toolbar>
        </AppBar>
