@@ -1,8 +1,5 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
@@ -20,7 +17,7 @@ import grid3picture from "../../assets/homescreen-grid-3.jpg";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import PeopleIcon from '@mui/icons-material/People';
-import { CardHeader, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 
 function Copyright() {
   return (
@@ -32,8 +29,6 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 const theme = createTheme();
 
 export const HomePage = () => {
@@ -43,18 +38,10 @@ export const HomePage = () => {
       <NavBar/>
       <main>
         {/* Hero unit */}
-        <Box
-          sx={{
-            bgcolor: "background.paper",
-            pt: 8,
-            pb: 6,
-          }}
-        >
-
-
+        <Box className="main">
           <Grid container spacing={2} alignItems="center" style={{"paddingBottom" : "100px"}}>
             <Grid item xs={6}>
-              <Container maxWidth="sm" className="GridContainer">
+              <Container maxWidth="sm">
                 <Typography
                   component="h1"
                   variant="h4"
@@ -80,12 +67,12 @@ export const HomePage = () => {
                   spacing={2}
                   justifyContent="center"
                 >
-                  <Button variant="contained" style={{ background: "#A100FF" }}>
+                  <Button variant="contained" style={{ background: "#31004d" }}>
                     Search
                   </Button>
                   <Button
                     variant="outlined"
-                    style={{ color: "#A100FF", borderColor: "#A100FF" }}
+                    style={{ color: "#31004d", borderColor: "#31004d" }}
                   >
                     See all articles
                   </Button>
@@ -97,10 +84,10 @@ export const HomePage = () => {
                     component="img"
                     image={grid1picture}
                     alt="people collaborating"
+                    className="img"
                   />
             </Grid>
           </Grid>
-          
           <Grid container spacing={3} justifyContent="center" alignItems="center">
             <Grid item xs>
               <div className="icon">
@@ -200,7 +187,7 @@ export const HomePage = () => {
                   spacing={2}
                   justifyContent="center"
                 >
-                  <Button variant="contained" style={{ background: "#A100FF" }}>
+                  <Button variant="contained" style={{ background: "#31004d" }}>
                     Explore Rewards
                   </Button>
                 </Stack>
@@ -237,7 +224,7 @@ export const HomePage = () => {
                   spacing={2}
                   justifyContent="center"
                 >
-                  <Button variant="contained" style={{ background: "#A100FF" }}>
+                  <Button variant="contained" style={{ background: "#31004d" }}>
                     Explore Tools
                   </Button>
                 </Stack>
@@ -250,41 +237,38 @@ export const HomePage = () => {
                     alt="people sharing knowledge"
                   />
             </Grid>
-            
           </Grid>
-
-
-
-          
-
         </Box>
 
         <Box className="feedback-form">
-          <Card>
-            <CardHeader title="Got Feedback?"/>
+            <Typography
+             variant="h4"
+             align="center"
+             color="text.primary"
+             paragraph>Got Feedback?</Typography>
             <Typography
              variant="h6"
              align="center"
              color="text.secondary"
              paragraph>We'd love to hear it!</Typography>
-          <Grid container spacing={6} className="form-fields">
-            <Grid item>
-              <TextField id="standard-basic" label="Name" variant="standard" />
+            <Grid container spacing={6} className="form-fields">
+              <Grid item>
+                <TextField id="standard-basic" label="Name" variant="standard" />
+              </Grid>
+              <Grid item>
+                <TextField id="standard-basic" label="Email" variant="standard" />
+              </Grid>
             </Grid>
-            <Grid item>
-              <TextField id="standard-basic" label="Email" variant="standard" />
+            <Grid container className="form-fields" style={{"paddingTop" : "25px"}}>
+              <Grid item>
+              <TextField id="standard-basic" label="Your Message" variant="standard" multiline={true}/>
+              </Grid>
             </Grid>
-          </Grid>
-          <Grid container className="form-fields" style={{"paddingTop" : "25px"}}>
-            <Grid item>
-             <TextField id="standard-basic" label="Your Message" variant="standard" multiline={true}/>
-            </Grid>
-          </Grid>
-          </Card>
+            <Button variant="contained" style={{ background: "#31004d", marginTop: "20px" }}>Submit</Button>
         </Box>
       </main>
       {/* Footer */}
-      <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
+      <Box sx={{ bgcolor: "background.paper", p: 3 }} component="footer">
         {/*       <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography> */}
