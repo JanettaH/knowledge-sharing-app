@@ -163,7 +163,7 @@ function ToolsPage() {
                   >
                     Did you know that there are various MS Teams plugins that
                     can help you create, share & update knowledge articles
-                    easily? Here is a few: blah, blah.
+                    easily? Here is a few: MS Sharepoint, Confluence, OneNote, etc.
                   </Typography>
                 </Container>
               </Grid>

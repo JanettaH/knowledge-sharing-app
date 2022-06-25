@@ -9,6 +9,11 @@ app.use(require("./routes/employees"));
 // get driver connection
 const dbo = require("./db/conn");
  
+// simple route
+app.get("/api", (req, res) => {
+  res.json({ message: "Hello world" });
+});
+
 app.listen(port, () => {
   // perform a database connection when server starts
   dbo.connectToServer(function (err) {

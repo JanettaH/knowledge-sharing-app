@@ -34,6 +34,14 @@ export const NavBar = () => {
           >
             Resources
           </Link>
+          <Link 
+            href="/leaderboard" 
+            className="Links" 
+            underline="none" 
+            color="black"
+            >
+              Leaderboard
+          </Link>
         </div>
       </Toolbar>
     </AppBar>
