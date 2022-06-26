@@ -1,6 +1,16 @@
+# Knowledge sharing app Frontend
+
+Web frontend for Knowledge sharing application.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Installation
+
+First you need to clone the repository then
+
+### `npm install`
 
 ## Available Scripts
 
