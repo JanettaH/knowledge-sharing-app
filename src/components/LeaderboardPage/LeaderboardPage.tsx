@@ -22,7 +22,7 @@ function Leaderboard() {
     const [data, setData] = useState<any[]>([]);
 
     useEffect(() => {
-        fetch("/employees")
+        fetch("https://knowledge-app-backend.herokuapp.com/employees")
         .then((res) => res.json())
         .then((data) => setData(data));
     }, []);
